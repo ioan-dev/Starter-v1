@@ -1,11 +1,12 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @use "abstracts" as *;
- *   | ^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   base\_helpers.scss 1:1  @forward
- *   base\_index.scss 6:1    @use
- *   main.scss 2:1           root stylesheet */
+/* Error: Undefined mixin.
+ *    ,
+ * 14 | /   @include mobile {
+ * 15 | |     display: none !important;
+ * 16 | \   }
+ *    '
+ *   base\_helpers.scss 14:3  @forward
+ *   base\_index.scss 6:1     @use
+ *   main.scss 2:1            root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +16,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"abstracts\" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   base\\_helpers.scss 1:1  @forward\a   base\\_index.scss 6:1    @use\a   main.scss 2:1           root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502  \250c    @include mobile {\a 15 \2502  \2502      display: none !important;\a 16 \2502  \2514    }\a    \2575 \a   base\\_helpers.scss 14:3  @forward\a   base\\_index.scss 6:1     @use\a   main.scss 2:1            root stylesheet";
 }

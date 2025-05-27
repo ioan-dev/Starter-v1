@@ -1,15 +1,19 @@
-:root {
-  --font-primary: "Montserrat", sans-serif;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "abstracts" as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   base\_helpers.scss 1:1  @forward
+ *   base\_index.scss 6:1    @use
+ *   main.scss 2:1           root stylesheet */
 
-@font-face {
-  font-family: "MyFont";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"abstracts\" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   base\\_helpers.scss 1:1  @forward\a   base\\_index.scss 6:1    @use\a   main.scss 2:1           root stylesheet";
 }
-body {
-  background: #504b4b;
-}
-
-/*# sourceMappingURL=main.css.map */

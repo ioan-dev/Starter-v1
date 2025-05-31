@@ -267,4 +267,31 @@ svg * {
   font-size: var(--font-size-lg);
 }
 
+.card {
+  background-color: #9b35aa;
+  border-radius: 10px;
+  margin-inline: auto;
+}
+@media (width >= 1366px) {
+  .card {
+    font-size: 40px;
+    padding: 30px;
+    max-width: 700px;
+    margin-inline: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+@media (width >= 768px) {
+  .card {
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+@media (width >= 360px) {
+  .card {
+    font-size: 16px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
